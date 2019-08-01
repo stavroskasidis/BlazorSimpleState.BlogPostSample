@@ -1,10 +1,10 @@
 ﻿
 <p>Current count: @CurrentCount</p>
 
-<button class="btn btn-primary" @onclick="@State.IncrementCounter">Click me</button>
+<button class="btn btn-primary" @onclick="@StateManager.IncrementCounter">Click me</button>
 <CounterReset />
 
 @code {
     [Parameter] protected int CurrentCount { get; set; }
-    [CascadingParameter] protected CounterState State { get; set; }
+    [CascadingParameter] protected CounterState.Manager StateManager { get; set; }
 }

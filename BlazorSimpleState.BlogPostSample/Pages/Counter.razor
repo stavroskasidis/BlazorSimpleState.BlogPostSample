@@ -2,18 +2,20 @@
 
 <h1>Counter</h1>
 
-<CascadingValue Value="state">
+<CascadingValue Value="stateManager">
     <CounterDisplay CurrentCount="state.CurrentCount" />
 </CascadingValue>
 
 @code{
     private CounterState state;
+    private CounterState.Manager stateManager;
 
     protected override void OnInit()
     {
         state = new CounterState();
+        stateManager = new CounterState.Manager(state);
 
         //When counter changes, trigger the component's StateHasChanged method to notify it to rerender
-        state.OnCountChanged += StateHasChanged;
+        stateManager.OnCountChanged += StateHasChanged;
     }
 }
