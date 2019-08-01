@@ -1,11 +1,10 @@
 ﻿
 <p>Current count: @CurrentCount</p>
 
-<button class="btn btn-primary" @onclick="OnIncrement">Click me</button>
-<CounterReset OnCounterReset="@OnReset" />
+<button class="btn btn-primary" @onclick="@State.IncrementCounter">Click me</button>
+<CounterReset />
 
 @code {
     [Parameter] protected int CurrentCount { get; set; }
-    [Parameter] protected EventCallback<UIMouseEventArgs> OnIncrement { get; set; }
-    [Parameter] protected EventCallback<UIMouseEventArgs> OnReset { get; set; }
+    [CascadingParameter] protected CounterState State { get; set; }
 }
