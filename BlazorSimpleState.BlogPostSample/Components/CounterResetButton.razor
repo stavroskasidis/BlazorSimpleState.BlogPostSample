@@ -1,5 +1,5 @@
-﻿<button class="btn btn-primary" @onclick="OnReset">Reset Counter</button>
+﻿<button class="btn btn-primary" @onclick="State.ResetCounter">Reset Counter</button>
 
 @code {
-    [Parameter] protected EventCallback<UIMouseEventArgs> OnReset { get; set; }
+    [CascadingParameter] protected CounterState State { get; set; }
 }
