@@ -3,7 +3,7 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio Version 16
 VisualStudioVersion = 16.0.29111.141
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "BlazorSimpleState.BlogPostSample", "BlazorSimpleState.BlogPostSample\BlazorSimpleState.BlogPostSample.csproj", "{1A9A813E-D890-45F7-9C42-E329186E5D4B}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "BlazorSimpleState.BlogPostSample", "BlazorSimpleState.BlogPostSample\BlazorSimpleState.BlogPostSample.csproj", "{1A9A813E-D890-45F7-9C42-E329186E5D4B}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution

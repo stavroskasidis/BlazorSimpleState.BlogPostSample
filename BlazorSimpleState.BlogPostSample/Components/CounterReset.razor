@@ -1,0 +1,5 @@
+﻿
+<button class="btn btn-primary" @onclick="OnCounterReset">Reset Counter</button>
+@code {
+    [Parameter] protected EventCallback<UIMouseEventArgs> OnCounterReset { get; set; }
+}

@@ -2,15 +2,18 @@
 
 <h1>Counter</h1>
 
-<p>Current count: @currentCount</p>
+<CounterDisplay CurrentCount="currentCount" OnIncrement="OnIncrement" OnReset="OnReset"/>
 
-<button class="btn btn-primary" @onclick="IncrementCount">Click me</button>
-
-@code {
-    int currentCount = 0;
-
-    void IncrementCount()
+@code{
+    private int currentCount = 0;
+    private void OnIncrement()
     {
         currentCount++;
     }
+
+    private void OnReset()
+    {
+        currentCount = 0;
+    }
+
 }
